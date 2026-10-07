@@ -1,0 +1,115 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  color: #111827;
+  background: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #ffffff;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+}
+
+a,
+button {
+  touch-action: manipulation;
+}
+
+.website-prototype-root {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.website-export-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 14px clamp(20px, 4vw, 56px);
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid rgba(17, 24, 39, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.website-export-brand {
+  font-weight: 800;
+  color: #111827;
+  text-decoration: none;
+}
+
+.website-export-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  justify-content: flex-end;
+}
+
+.website-export-links a {
+  color: #4b5563;
+  font-size: 14px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.website-export-links a:hover,
+.website-export-links a[aria-current="page"] {
+  color: #111827;
+}
+
+.website-section {
+  width: 100%;
+  min-height: 420px;
+}
+
+@media (max-width: 720px) {
+  .website-section {
+    min-height: auto;
+    width: 100% !important;
+    height: auto !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    overflow-x: hidden !important;
+  }
+  .website-section,
+  .website-section * { min-width: 0 !important; overflow-wrap: break-word; word-break: normal; }
+  .website-section[style*="grid-template-columns"],
+  .website-section [style*="grid-template-columns"] { grid-template-columns: minmax(0, 1fr) !important; }
+  .website-section > [style*="display:flex"],
+  .website-section > [style*="display: flex"],
+  .website-section > div > [style*="display:flex"],
+  .website-section > div > [style*="display: flex"] { flex-direction: column !important; align-items: stretch !important; }
+  .website-section [style*="position:absolute"],
+  .website-section [style*="position: absolute"] { position: relative !important; inset: auto !important; left: auto !important; right: auto !important; top: auto !important; bottom: auto !important; transform: none !important; }
+  .website-section [style*="width:"] { max-width: 100% !important; }
+  .website-section img,
+  .website-section svg,
+  .website-section video { max-width: 100% !important; height: auto !important; }
+  .website-section h1 { font-size: clamp(30px, 8.2vw, 46px) !important; }
+  .website-section h2 { font-size: clamp(26px, 7vw, 38px) !important; }
+  .website-section h3 { font-size: clamp(22px, 6vw, 32px) !important; }
+  .website-section p,
+  .website-section li { font-size: clamp(15px, 4vw, 19px) !important; }
+  .website-section a,
+  .website-section button { white-space: normal !important; }
+}
