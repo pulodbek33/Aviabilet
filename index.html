@@ -102,7 +102,34 @@
       <h1 class="hs-title">Найдите рейс и купите билет на официальном сайте авиакомпании</h1>
       <p class="hs-subhead">Показываем расписание, цены и условия тарифа. Оформление и оплата — на сайте перевозчика.</p>
       <div class="hs-search-panel">
-        <forma>
+        <forma><div id="tp-widget-container"></div>
+<script src="https://tp.media" type="text/javascript" charset="utf-8" async></script>
+<script type="text/javascript">
+    (function(){
+        window.TP_WIDGET_PARAMS = window.TP_WIDGET_PARAMS || {};
+        window.TP_WIDGET_PARAMS["545934"] = {
+            uuid: "545934",
+            marker: "525381",
+            type: "search_form",
+            meta: {
+                host: "://travelpayouts.com",
+                locale: "ru",
+                currency: "rub",
+                powered_by: true
+            },
+            params: {
+                color_background: "#0073ff",
+                color_button: "#ff9800",
+                color_text: "#ffffff",
+                color_button_text: "#ffffff",
+                show_logo: false,
+                input_size: "large",
+                shape: "round"
+            }
+        };
+    })();
+</script>
+
         </form>
       </div>
       <div class="hs-trust">
